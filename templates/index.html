@@ -44,7 +44,7 @@
 
 </head>
  
-<form method="post" action="server.php">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 	<h1> Log In!! </h1>
 	<hr>
 		
@@ -71,5 +71,5 @@
 		echo $_POST["pass"];
 	}
 ?>
- 
+	
 </html>
