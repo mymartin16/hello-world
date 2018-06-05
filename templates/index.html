@@ -62,5 +62,14 @@
 	</div>	
 	
 </form>
+
+<?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		echo $_POST["uid"];
+		echo "<br>";
+		echo $_POST["pass"];
+	}
+?>
  
 </html>
