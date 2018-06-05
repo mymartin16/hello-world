@@ -3,7 +3,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def main():
-    return render_template('index.html')
+    return ("Vikas")
 
 if __name__ == "__main__":
     application.run()
