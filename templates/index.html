@@ -44,23 +44,129 @@
 
 </head>
  
-<form method="post" action="http://hw-hw.a3c1.starter-us-west-1.openshiftapps.com ">
+<form method="post">
 	<h1> Log In!! </h1>
 	<hr>
 		
 	<div>
 		
 		<span style="font-size:20px"> User Id: </span> <br> 
-		<input type="text" name="uid" placeholder="Enter User Id here....">
+		<input type="text" name="uid" id="uid" placeholder="Enter User Id here....">
 		<br><br>
 		<span style="font-size:20px"> Password: </span> <br>
-		<input type="password" name="pass" placeholder="Enter Password here....">
+		<input type="password" name="pass" id="pass" placeholder="Enter Password here....">
 		<br><br>
 		
-		<input type="submit" name="submit" value="Submit" title="Submit Form!">
+		<input type="submit" name="submit" value="Submit" title="Submit Form!" onclick="disp()">
 		
-	</div>	
+	</div>
 	
+	<script><!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<title> Log In Page </title>
+	
+	<style>
+		div
+		{
+			background-color: #d5e1df;
+	
+
+		margin: 100px 400px 0px 400px;
+			padding: 20px;
+			color: #3e4444
+		}
+		input[type=text], input
+
+[type=password] 
+		{
+    		width: 100%;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+ 
+
+   		border: none;
+    		background-color: #3CBC8D;
+    		color: white;
+		}
+		input[type=button], input[type=submit], 
+
+input[type=reset] 
+		{
+			width: 100%;
+    		background-color: #4CAF50;
+    		border: none;
+    		color: 
+
+white;
+    		padding: 16px 32px;
+    		text-decoration: none;
+    		margin: 4px 2px;
+    		cursor: pointer;
+		}
+	
+
+	h1
+		{
+			text-align: center;
+			color: #ffcc5c;
+		}
+	</style>
+
+	<meta name="viewport" 
+
+content="width=device-width, initial-scale=1.0">
+
+</head>
+ 
+<form method="post">
+	<h1> Log In!! </h1>
+	<hr>
+		
+	<div>
+		
+		<span 
+
+style="font-size:20px"> User Id: </span> <br> 
+		<input type="text" name="uid" id="uid" placeholder="Enter User Id here....">
+		<br><br>
+		
+
+<span style="font-size:20px"> Password: </span> <br>
+		<input type="password" name="pass" id="pass" placeholder="Enter Password here....">
+		
+
+<br><br>
+		
+		<input type="submit" name="submit" value="Submit" title="Submit Form!" onclick="disp()">
+		
+	</div>
+	
+	
+
+<script>
+		function disp()
+		{
+			var s=document.getElementById("uid").value;
+    			alert("User Id: " + s);
+		
+
+}
+	</script>
+		
+</form>
+	
+</html>
+
+		function disp()
+		{
+			var s=document.getElementById("uid").value;
+    			alert("s");
+		}
+	</script>
+		
 </form>
 	
 </html>
